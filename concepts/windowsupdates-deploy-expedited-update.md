@@ -15,7 +15,7 @@ Deploying an expedited Windows 10 update allows the update to be installed as qu
 
 * The update starts right away rather than waiting for the next regular update scan, which occurs once every 22 hours by default.
 * The update downloads and installs as quickly as possible.
-* The update process overrides configured device policy settings, such as days until a forced reboot. After the expedited update is installed, the device returns to the current policy settings.
+* The update process overrides configured device policy settings, such as days until the device is forced to restart. After the expedited update is installed, the device returns to the current policy settings.
 
 Today, the deployment service supports expedited deployments of Windows 10 quality updates. Deploying an expedited quality update helps achieve compliance against a specific security update, as specified by date. (See also: [Deploy an update](windowsupdates-deploy-update.md))
 
@@ -83,7 +83,7 @@ A deployment specifies content to deploy, how and when to deploy the content, an
 
 When you deploy an expedited quality update to a device, Windows Update will offer an update that brings the device above the minimum compliance level specified. Depending on when each device scans and updates, some devices may receive newer updates (e.g. if there is a newer security update than the one corresponding to the desired minimum compliance level), but all devices will meet the specified security update compliance standard. This behavior of offering the latest available, indicated by the property `equivalentContent` being set to the default value `latestSecurity`, helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.
 
-You can configure the reboot grace period using the property `daysUntilForcedReboot` in the deployment's user experience settings. The reboot grace period sets the amount of time after installation that the user can control the timing of the reboot. If the device has not rebooted when the grace period expires, it reboots automatically.
+You can configure the device restart grace period using the property `daysUntilForcedReboot` in the deployment's user experience settings. The grace period sets the amount of time after installation that the user can control the timing of when the device restarts. If the device has not restarted by the time the grace period expires, it restarts automatically.
 
 Below is an example of creating a deployment for an expedited quality update. The targeted devices will be specified in the next step.
 
