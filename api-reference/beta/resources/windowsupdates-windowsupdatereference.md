@@ -15,8 +15,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents specific Windows 10 update content.
 
-In a deployment, the same windowsUpdateReference could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
+In a deployment, the same Windows update reference could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
 
+All Windows update references exist as one of the following derived types: [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md),  [qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md), [expeditedQualityUpdateReference](../resources/windowsupdates-expeditedqualityupdatereference.md).
 
 Inherits from [softwareUpdateReference](../resources/windowsupdates-softwareupdatereference.md).
 
