@@ -70,7 +70,7 @@ Deployments move through the following lifecycle states:
 
 The [deployment](/graph/api/resources/windowsupdates-deployment) resource has a `state` property of type [deploymentState](/graph/api/resources/windowsupdates-deploymentstate) which provides information about the current lifecycle state.
 
-The service will determine the effective `value` of the deployment state as a net result of several inputs and asynchronous processes, but you can request a particular value by setting `requestedValue` as one of these inputs. Other inputs to the effective deployment state value inclue rollout settings and monitoring settings.
+The service will determine the effective `value` of the deployment state as a net result of several inputs and asynchronous processes, but you can request a particular value by setting `requestedValue` as one of these inputs. Other inputs to the effective deployment state value include rollout settings and monitoring settings.
 
 <!-- | Property       | Type                                                                                                              | Description                                                                                               |
 |:---------------|:------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|
