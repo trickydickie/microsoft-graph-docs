@@ -11,13 +11,13 @@ doc_type: conceptualPageType
 
 Software updates are the primary type of content deployable by the deployment service. In order to find specific updates available for deployment you will refer to entries in a catalog.
 
-You may already be familiar with the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/) which lists software updates for Windows. The deployment service provides its own [catalog](/graph/api/resources/windowsupdates-catalog.md) to simplify decision making and approval workflows by aggregating equivalent updates together under a single [catalogEntry](/graph/api/resources/windowsupdates-catalogentry.md).
+You may already be familiar with the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/) which lists software updates for Windows. The deployment service provides its own [catalog](/graph/api/resources/windowsupdates-catalog.md) to simplify decision making and approval workflows by aggregating equivalent updates together under a single [catalogEntry](/graph/api/resources/windowsupdates-catalogentry.md).
 
 ## Windows update categories
 
 There are two high-level categories of Windows 10 updates: feature updates and quality updates. Quality updates are further classified as security and non-security. The deployment service currently supports deploying feature updates and security quality updates. Driver management is not currently included as part of the deployment service's support for quality updates.
 
-To learn more about Windows 10 updates and servicing, see [Quick guide to Windows as a service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-quick-start)
+To learn more about Windows 10 updates and servicing, see [Quick guide to Windows as a service](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
 
 ## Identifying updates for deployment
 
