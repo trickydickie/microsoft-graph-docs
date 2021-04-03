@@ -30,19 +30,19 @@ To learn more about creating a deployment, see [Deploy an update using the Windo
 
 Rollout settings govern how the content is deployed over time to devices in the deployment audience. Rollout settings can be configured for deployments of feature updates.
 
-To learn more, see [Schedule a deployment using the Windows Update for Business deployment service](windowsupdates-schedule-deployment.md).
+To learn more about rollout settings, see [Schedule a deployment using the Windows Update for Business deployment service](windowsupdates-schedule-deployment.md).
 
 ### Monitoring
 
 You can use monitoring settings to configure alerts and automated actions to take based on update signals from devices. Monitoring settings can be configured for deployments of feature updates.
 
-To learn more, see [Manage monitoring rules for a deployment using the Windows Update for Business deployment service](windowsupdates-manage-monitoring-rules.md).
+To learn more about monitoring settings, see [Manage monitoring rules for a deployment using the Windows Update for Business deployment service](windowsupdates-manage-monitoring-rules.md).
 
 ### User experience
 
 For deployments of expedited quality updates, user experience settings temporarily override existing policies on the device for update experience.
 
-To learn more, see [Deploy and expedited update using the Windows Update for Business deployment service](windowsupdates-deploy-expedited-update.md).
+To learn more about user experience settings, see [Deploy and expedited update using the Windows Update for Business deployment service](windowsupdates-deploy-expedited-update.md).
 
 ## Get or set lifecycle state
 
@@ -68,7 +68,7 @@ Deployments move through the following lifecycle states:
 
 ### Resource model
 
-The [deployment](../api-reference/beta/resources/windowsupdates-deployment.md) resource has a `state` property of type [deploymentState](../api-reference/beta/resources/windowsupdates-deploymentstate.md) which provides information about the current lifecycle state.
+The [deployment](/graph/api/resources/windowsupdates-deployment) resource has a `state` property of type [deploymentState](/graph/api/resources/windowsupdates-deploymentstate) which provides information about the current lifecycle state.
 
 The service will determine the effective `value` of the deployment state as a net result of several inputs and asynchronous processes, but you can request a particular value by setting `requestedValue` as one of these inputs. Other inputs to the effective deployment state value include rollout settings and monitoring settings.
 

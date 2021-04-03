@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 Software updates are the primary type of content deployable by the deployment service. In order to find specific updates available for deployment you will refer to entries in a catalog.
 
-You may already be familiar with the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/) which lists software updates for Windows. The deployment service provides its own [catalog](../api-reference/beta/resources/windowsupdates-catalog.md) to simplify decision making and approval workflows by aggregating equivalent updates together under a single [catalogEntry](../api-reference/beta/resources/windowsupdates-catalogentry.md).
+You may already be familiar with the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/) which lists software updates for Windows. The deployment service provides its own [catalog](/graph/api/resources/windowsupdates-catalog) to simplify decision making and approval workflows by aggregating equivalent updates together under a single [catalogEntry](/graph/api/resources/windowsupdates-catalogentry).
 
 ## Windows update categories
 
@@ -66,7 +66,7 @@ Below are some examples of feature updates in the deployment service's catalog.
 | Feature Update to Windows 10, version 1903 | 1903    |
 | Feature Update to Windows 10, version 1809 | 1809    |
 
-Once you identify a desired version, you can assign it as content to a deployment using a [featureUpdateReference](../api-reference/beta/resources/windowsupdates-featureupdatereference.md) and specifying the `version` property.
+Once you identify a desired version, you can assign it as content to a deployment using a [featureUpdateReference](/graph/api/resources/windowsupdates-featureupdatereference) and specifying the `version` property.
 
 ### Quality updates
 
@@ -93,8 +93,8 @@ The entries from the Microsoft Update Catalog corresponding to a quality update 
 | 2021-03 Cumulative Update for Windows 10 Version 1909 for x86-based Systems (KB5000808) | Windows 10, version 1903 and later | Security Updates |
 | 2021-03 Cumulative Update for Windows 10 Version 1809 for x64-based Systems (KB5000822) | Windows 10, Windows 10 LTSB        | Security Updates |
 
-Once you identify a desired update you can assign it as content to a deployment using a [qualityUpdateReference](../api-reference/beta/resources/windowsupdates-qualityupdatereference.md) and specifying the `releaseDateTime` and `classification` properties.
+Once you identify a desired update you can assign it as content to a deployment using a [qualityUpdateReference](/graph/api/resources/windowsupdates-qualityupdatereference) and specifying the `releaseDateTime` and `classification` properties.
 
 ## Examples
 
-To see examples of [listing catalog entries](../api-reference/beta/api/windowsupdates-catalog-list-entries.md), see [Deploy an update](windowsupdates-deploy-update.md) and [Deploy an expedited update](windowsupdates-deploy-expedited-update.md)
+To see examples of [listing catalog entries](/graph/api/windowsupdates-catalog-list-entries), see [Deploy an update](windowsupdates-deploy-update.md) and [Deploy an expedited update](windowsupdates-deploy-expedited-update.md)
