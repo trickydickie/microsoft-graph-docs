@@ -72,12 +72,6 @@ The [deployment](/graph/api/resources/windowsupdates-deployment) resource has a 
 
 The service will determine the effective `value` of the deployment state as a net result of several inputs and asynchronous processes, but you can request a particular value by setting `requestedValue` as one of these inputs. Other inputs to the effective deployment state value include rollout settings and monitoring settings.
 
-<!-- | Property       | Type                                                                                                              | Description                                                                                               |
-|:---------------|:------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|
-| value          | deploymentStateValue                                                                                              | Specifies the state of the deployment. Read-only. Possible values are: `scheduled`, `offering`, `paused`. |
-| reasons        | [deploymentStateReason](/graph/api/resources/windowsupdates-deploymentstatereason) collection | Specifies the reasons the deployment has its state value. Read-only.                                      |
-| requestedValue | requestedDeploymentStateValue                                                                                     | Specifies the requested state of the deployment. Possible values are: `none`, `paused`.                   | -->
-
 ## Multiple deployments
 
 A device can be assigned to multiple deployments at one time. These deployments can be for content of different update categories, as well as for content of the same update category.

@@ -77,7 +77,7 @@ Content-length: 145
 {
   "assets": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "String (identifier)"
     }
   ]

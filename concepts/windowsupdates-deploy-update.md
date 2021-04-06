@@ -17,7 +17,7 @@ Today, the deployment service supports deployments of Windows 10 feature updates
 
 ## Prerequisites
 
-* [deployment service prerequisites]
+* Devices meet the [prerequisites for the deployment service](windowsupdates-concept-overview.md#prerequisites).
 * Before you can use the deployment service to deploy updates of a given category (e.g. feature updates), devices must be [enrolled in management](windowsupdates-enroll.md) by the deployment service for that update category.
 
 ## Step 1: (Optional) Get a list of deployable updates

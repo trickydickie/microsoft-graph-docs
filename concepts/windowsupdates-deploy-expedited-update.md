@@ -21,8 +21,8 @@ Today, the deployment service supports expedited deployments of Windows 10 quali
 
 ## Prerequisites
 
-* [deployment service prerequisites]
-* [expedite client]
+* Devices meet the [prerequisites for the deployment service](windowsupdates-concept-overview.md#prerequisites).
+* Devices have installed the update described in [KB4023057 - Update for Windows 10 Update Service components](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a) (or newer).
 
 ## Step 1: (Optional) Get a list of expeditable updates
 
