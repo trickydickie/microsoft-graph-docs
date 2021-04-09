@@ -32,7 +32,7 @@ While these connectors help connect to popular services, you may want to integra
 ### Get started with custom Graph connectors:
 * [Graph Connector API overview](data-inflow-connectors-api-overview.md)
 * [Try Graph Connector APIs using Postman](data-inflow-connectors-api-postman.md)
-<!---**(Articles coming soon!)**
+<!---**(Articles coming next)**
 * [Build your first custom connector with Microsoft Graph]()
 --->
 
