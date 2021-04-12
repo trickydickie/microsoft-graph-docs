@@ -9,7 +9,7 @@ ms.prod: "data-inflow"
 
 # Common Microsoft Graph connector API errors
 
-Below is a list of errors that can appear from a connection.
+This topic shows a list of errors that can be returned from a connection, and the recommendations on how to solve the problem.
 
 | **Error code** | **Error message** | **Solution** |
 | --- | --- | --- |
