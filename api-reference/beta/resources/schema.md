@@ -47,6 +47,14 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.schema",
   "keyProperty": "id"
 }-->
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.schema",
+  "keyProperty": "id"
+}-->
 
 ```json
 {
