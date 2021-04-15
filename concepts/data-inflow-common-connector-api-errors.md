@@ -37,3 +37,4 @@ This topic shows a list of errors that can be returned from a connection, and th
 | 2009 | Non-Azure AD group indexing is temporarily paused due to a large number of requests. Indexing will resume when the system finishes processing these requests. Please check back later. | Allow some time and check back later. |
 | 2010 | This connection is no longer valid because of an update made by Microsoft. Please delete the connection and create a new one. | Delete the connection and create a new one. |
 | 5000 | Something went wrong. If this continues, contact support. | Contact support for a recommendation.|
+
