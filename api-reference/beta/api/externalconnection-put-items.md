@@ -3,13 +3,14 @@ title: "Create externalItem"
 description: "Create a new externalItem."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
 # Create externalItem
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,17 +64,17 @@ All `DateTime` type properties must be in ISO 8601 format.
 
 Properties on an `externalItem` should use type specifiers in the payload in the following scenarios:
 
-- For `String` type properties, if the value contains non-ASCII characters.
+- For `string` type properties, if the value contains non-ASCII characters.
 
     ```json
-    "description@odata.type": "String",
+    "description@odata.type": "string",
     "description": "Kandierte Äpfel"
     ```
 
 - For all collection types.
 
     ```json
-    "categories@odata.type": "Collection(String)"
+    "categories@odata.type": "Collection(string)"
     "categories": [
       "red",
       "blue"
@@ -81,7 +82,7 @@ Properties on an `externalItem` should use type specifiers in the payload in the
     ```
 
     > [!IMPORTANT]
-    > When including a property of type `Collection(DateTime)`, you must use the type specifier `Collection(DateTimeOffset)`.
+    > When including a property of type `Collection(dateTime)`, you must use the type specifier `Collection(dateTimeOffset)`.
 
 ## Response
 
@@ -106,7 +107,6 @@ PUT https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.externalItem",
   "acl": [
     {
       "type": "user",

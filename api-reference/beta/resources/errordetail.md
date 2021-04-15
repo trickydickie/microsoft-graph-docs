@@ -3,13 +3,14 @@ title: "errorDetail resource type"
 description: "Describes an error for a failed request to create a Microsoft Search connection schema asynchronously."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
 # errorDetail resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

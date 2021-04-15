@@ -3,13 +3,14 @@ title: "Get schema"
 description: "Retrieve the properties of a schema for an externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
 # Get schema
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -108,7 +109,7 @@ Content-type: application/json
   "properties": [
     {
       "name": "ticketTitle",
-      "type": "String",
+      "type": "string",
       "isSearchable": true,
       "isRetrievable": true,
       "labels": [
@@ -117,7 +118,7 @@ Content-type: application/json
     },
     {
       "name": "priority",
-      "type": "String",
+      "type": "string",
       "isQueryable": true,
       "isRetrievable": true,
       "isRefinable": true,
@@ -125,7 +126,7 @@ Content-type: application/json
     },
     {
       "name": "assignee",
-      "type": "String",
+      "type": "string",
       "isRetrievable": true
     }
   ]

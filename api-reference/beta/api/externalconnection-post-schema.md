@@ -3,13 +3,14 @@ title: "Create schema"
 description: "Create the schema for a Microsoft Search connection."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
 # Create schema
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -82,7 +83,7 @@ Prefer: respond-async
   "properties": [
     {
       "name": "ticketTitle",
-      "type": "String",
+      "type": "string",
       "isSearchable": "true",
       "isRetrievable": "true",
       "labels": [
@@ -91,14 +92,14 @@ Prefer: respond-async
     },
     {
       "name": "priority",
-      "type": "String",
+      "type": "string",
       "isQueryable": "true",
       "isRetrievable": "true",
       "isSearchable": "false"
     },
     {
       "name": "assignee",
-      "type": "String",
+      "type": string",
       "isRetrievable": "true"
     }
   ]

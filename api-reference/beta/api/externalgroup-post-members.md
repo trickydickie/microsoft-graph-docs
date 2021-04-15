@@ -2,6 +2,7 @@
 title: "Create externalGroupMember"
 description: "Create a new externalGroupMember object."
 author: "snlraju-msft"
+ms.author: mecampos
 localization_priority: Normal
 ms.prod: "search"
 doc_type: apiPageType
@@ -9,7 +10,7 @@ doc_type: apiPageType
 
 # Create externalGroupMember
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +52,7 @@ The following table shows the properties that are required when you create the [
 
 | Property       | Type                    | Description                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | The unique `id` of the member. It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups.                                    |
+| id             | string                  | The unique `id` of the member. It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups.                                    |
 | type           | externalGroupMemberType | The type of member added to the external group. Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`. |
 | identitySource | identitySourceType      | The identity source that the member belongs to. Possible values are: `azureActiveDirectory`, `external`.                                                                                         |
 
@@ -143,7 +144,6 @@ POST https://graph.microsoft.com/beta/external/connections/contosohr/groups/31be
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.externalGroupMember",
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
   "type": "group",
   "identitySource": "azureActiveDirectory"
@@ -207,7 +207,6 @@ POST https://graph.microsoft.com/beta/external/connections/contosohr/groups/31be
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.externalGroupMember",
   "id": "1431b9c38ee647f6a",
   "type": "group",
   "identitySource": "external"

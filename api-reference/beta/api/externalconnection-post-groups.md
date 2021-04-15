@@ -2,6 +2,7 @@
 title: "Create externalGroup"
 description: "Create a new externalGroup object."
 author: "snlraju-msft"
+ms.author: mecampos
 localization_priority: Normal
 ms.prod: "search"
 doc_type: apiPageType
@@ -9,7 +10,7 @@ doc_type: apiPageType
 
 # Create externalGroup
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,9 +52,9 @@ The following table shows the properties that are required when you create the [
 
 | Property    | Type   | Description                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
-| displayName | String | The friendly name of the external group. Optional.                                                                      |
-| description | String | The description of the external group. Optional.                                                                         |
+| id          | string | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
+| displayName | string | The friendly name of the external group. Optional.                                                                      |
+| description | string | The description of the external group. Optional.                                                                         |
 
 ## Response
 
@@ -76,7 +77,6 @@ POST https://graph.microsoft.com/beta/external/connections/contosohr/groups
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.externalGroup",
   "id": "31bea3d537902000",
   "displayName": "Contoso Marketing",
   "description": "The product marketing team"

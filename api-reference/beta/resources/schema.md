@@ -3,13 +3,14 @@ title: "schema resource type"
 description: "The connection schema determines how your content added into a connection will be used in various Microsoft Graph experiences."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
 # schema resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +29,7 @@ The [connection](externalconnection.md) schema determines how your external cont
 
 | Property   | Type                               | Description                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | String                             | Must be set to `microsoft.graph.externalItem`. Required. |
+| baseType   | string                             | Must be set to `microsoft.graph.externalItem`. Required. |
 | properties | [property](property.md) collection | The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128. |
 
 ## Relationships
@@ -47,19 +48,11 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.schema",
   "keyProperty": "id"
 }-->
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.schema",
-  "keyProperty": "id"
-}-->
 
 ```json
 {
-  "baseType": "String",
-  "id": "String (identifier)",
+  "baseType": "string",
+  "id": "string (identifier)",
   "properties": [{"@odata.type": "microsoft.graph.property"}]
 }
 ```
